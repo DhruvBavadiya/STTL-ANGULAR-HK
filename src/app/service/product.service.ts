@@ -16,7 +16,7 @@ export class ProductService {
   }
 
   getProductById(id:string):Observable<Product>{
-    return this.http.get<Product>(`${this.apiUrl}/products/${id}`)
+    return this.http.get<Product>(`${this.apiUrl}/products-id/${id}`)
   }
 }
 
